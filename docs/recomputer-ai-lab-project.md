@@ -104,9 +104,9 @@ Insert the card into the Pi 5, connect HDMI and a keyboard, and power on.
 
 ## Download
 
-The image is distributed outside GitHub because of its size. Add the external download URL here:
+The image is distributed outside GitHub because of its size. Download it from Hugging Face:
 
-`TODO: external image URL`
+**https://huggingface.co/datasets/xxymood/omarchy-pi-raspberry-pi5**
 
 SHA-256:
 
