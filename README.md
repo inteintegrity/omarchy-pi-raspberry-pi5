@@ -21,7 +21,7 @@ The image was built on an x86_64 Arch Linux host with `qemu-user-static` and `sy
 | `logs/build.log` | Full log of the successful build |
 | `BUILD-INFO.txt` | Versions, commit hashes and image checksum |
 
-The **16 GiB image is not stored in this Git repository** (GitHub's normal file limit is 100 MB). Download it from Hugging Face:
+The **16 GiB image is not stored in this Git repository**. Download it from Hugging Face:
 
 **https://huggingface.co/datasets/xxymood/omarchy-pi-raspberry-pi5**
 
