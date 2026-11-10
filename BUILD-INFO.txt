@@ -1,0 +1,41 @@
+Omarchy Pi 5 image build
+=======================
+
+Built: 2026-11-09
+Image: omarchy-pi.img
+Size: 17179869184 bytes (16 GiB)
+SHA256: 479d29fded1d9879d3709f6abfb4dd535a35c96139217e780cac3deb0daab2d9
+
+Upstream sources
+----------------
+omarchy-pi     main                    b19674e2ebc89b4a4bb6d1aac06c80a7979fd461 (52 commits)
+omarchy        raspberry-pi-platform   e5e835ee8b3098c0736d17a1b71d46608f3e23e9 (6740 commits)
+omarchy-pkgs   master                  e1bbf8545182f2ac00cb1455427c6d9e0a41ec39 (3935 commits)
+
+Key packages
+------------
+omarchy-dev            4.0.0.r6740.ge5e835e-1
+omarchy-settings-dev   4.0.0.r6740.ge5e835e-1
+omarchy-rpi-boot       0.4.0-1
+omarchy-pi-keyring     20261004-1
+linux-rpi              6.18.60-1
+raspberrypi-bootloader 20261102-1
+hyprland               0.57.1-1
+
+Image layout
+------------
+MBR
+p1: 512 MiB FAT32, starts at sector 16384 (8 MiB), bootable
+p2: btrfs, starts at sector 1064960 (520 MiB)
+Subvolumes: @, @home, @log, @pkg, @factory, @/.snapshots
+
+Build host
+----------
+Arch Linux x86_64 (WSL2)
+qemu-user-static + qemu-user-static-binfmt
+systemd-nspawn
+btrfs-progs, dosfstools, rsync, libarchive, base-devel
+imagemagick (extra host dependency used by omarchy-settings-dev)
+
+Build time: about 20 minutes after package download (TIMING total 1184s)
+Build log: logs/build.log

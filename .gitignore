@@ -1,0 +1,23 @@
+# Large build artifacts: distribute the image outside Git.
+*.img
+*.img.gz
+*.img.zst
+*.img.xz
+*.tar
+*.tar.gz
+*.tar.zst
+
+# Local build/repository transfer and diagnostic files.
+transfer/
+src/
+diag.ps1
+ocr.ps1
+ui.ps1
+capture-imager.ps1
+imager-window.png
+*.dmp
+
+# OS/editor noise.
+.DS_Store
+Thumbs.db
+*.swp
